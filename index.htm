@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surf Zombie Wax</title>
+  <style media="screen">
+   html,
+   body {
+    height: 100%;
+   }
+
+   *,
+   *:before,
+   *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+
+   html,
+   body {
+    font-size: 100%;
+   }
+
+   body {
+    background: white;
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+   }
+
+   a:hover {
+    cursor: pointer;
+   }
+
+   .button {
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1.0625rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    background-color: #16d3a4;
+    border-color: #12a983;
+    color: black;
+    transition: background-color 300ms ease-out;
+   }
+
+   .button:hover,
+   .button:focus {
+    background-color: #12a983;
+   }
+
+   .button:hover,
+   .button:focus {
+    color: black;
+   }
+
+   .button.radius {
+    border-radius: 4px;
+   }
+
+   @media only screen and (min-width: 40.063em) {
+    .button {
+     display: inline-block;
+    }
+   }
+
+   .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 96%;
+   }
+
+   .row:before,
+   .row:after {
+    content: " ";
+    display: table;
+   }
+
+   .row:after {
+    clear: both;
+   }
+
+   .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+   }
+
+   @media only screen {
+
+    .columns {
+     position: relative;
+     padding-left: 0.9375rem;
+     padding-right: 0.9375rem;
+     float: left;
+    }
+   }
+
+   @media only screen and (min-width: 40.063em) {
+
+    .columns {
+     position: relative;
+     padding-left: 0.9375rem;
+     padding-right: 0.9375rem;
+     float: left;
+    }
+   }
+
+   @media only screen and (min-width: 64.063em) {
+
+    .columns {
+     position: relative;
+     padding-left: 0.9375rem;
+     padding-right: 0.9375rem;
+     float: left;
+    }
+
+    .large-12 {
+     width: 100%;
+    }
+   }
+
+
+   * {
+    box-sizing: border-box;
+   }
+
+   figure {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    background: black url("i/zombie-main.jpg") center center fixed no-repeat;
+    background-size: cover;
+   }
+
+   a {
+    text-decoration: none;
+    color: black;
+   }
+
+   a:focus {
+    outline-color: white;
+   }
+
+   ul {
+    padding: 0;
+    list-style-type: none;
+   }
+
+   .center {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    min-width: 250px;
+    top: 50%;
+   }
+
+   .button {
+    margin-bottom: 8px;
+    position: relative;
+   }
+
+   .navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    padding-bottom: 40px;
+    z-index: 100;
+   }
+
+   .navbar a {
+    padding: 0.43333em 1.3em;
+    border: 1px solid #16d3a4;
+    margin: 0.1625em 0.65em;
+    font-size: 1.08333em;
+    line-height: 1.6em;
+    background-color: black;
+    color: #16d3a4;
+    text-decoration: none;
+   }
+
+   .navbar a:hover {
+    color: black;
+    background-color: #16d3a4;
+    border: 1px solid black;
+   }
+
+   footer {
+    text-align: right;
+    font-size: 14px;
+   }
+
+   .copyright {
+    display: block;
+    position: absolute;
+    bottom: 55%;
+    right: -224px;
+    height: 20px;
+    width: auto;
+   }
+
+   .copyright:hover {
+    right: -40px;
+   }
+
+   .copyright-handle {
+    border: 0 none;
+   }
+
+   .copyright-handle:hover {
+    background-color: none !important;
+    border: 0 none;
+   }
+  </style>
+ </head>
+
+ <body class="home">
+
+  <figure></figure>
+
+  <nav class="navbar" role="navigation">
+    <ul class="center">
+     <li>
+      <a title="info@surfzombiewax.com" href="mailto:info@surfzombiewax.com" class="bottom-nav button radius">Email</a>
+     </li>
+    </ul>
+    <footer class="row copyright">
+      <div class="large-12 columns">
+        <a class="copyright-handle button radius" href="#">&copy;&nbsp;&nbsp;&nbsp;&nbsp;2017 Surf Zombie Wax &nbsp;&nbsp;&nbsp;&nbsp;</a>
+      </div>
+    </footer>
+  </nav>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49656542-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+ </body>
+
+</html>
